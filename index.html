@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva HappyLand</title>
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Reserva Happyland Hotel</h1>
+        <br>
+        <p id="subtitulo">Preencha as informações pedidas:</p>
+        <br>
+    </div>
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nomecachorro"><strong>Nome do cachorro:</strong></label>
+                <input type="text" name="nomecachorro" id="nomecachorro" required>
+            </div>
+
+            <div class="campo">
+                <label for="nome"><strong>Nome do responsável:</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+        </fieldset>
+        <fieldset class="grupo">
+        <div class="campo">
+            <label for="telefone"><strong>Telefone:</strong></label>
+            <input type="tel" name="telefone" id="telefone" pattern="[0-9]{9}" required>
+        </div>
+
+        <div class="campo">
+            <label for="data_reservada"><strong>Data:</strong></label>
+            <input type="data" name="data_reservada" id="data_reservada" required>
+        </div>
+        </fieldset>
+        <div class="campo">
+            <label><strong>Qual o porte do seu pet?</strong></label>
+            <label>
+                <input type="radio" name="devweb" value="frontend" checked>Grande
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="backend">Médio
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="fullstack">Pequeno
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="idade"><strong>Idade</strong></label>
+            <select id="idade">
+                <option selected disabled value="">Selecione</option>
+                <option>Filhote</option>
+                <option>Adulto</option>
+                <option>Idoso</option>
+            </select>
+        </div>
+        
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Selecione as vacinas que estão renovadas do seu pet:</strong></label>
+                <br>
+                <input type="checkbox" id="vacina1" name="vacina1" value="HTML">
+                <label for="vacina1">V8/V10</label>
+                <input type="checkbox" id="vacina2" name="vacina2" value="CSS">
+                <label for="vacina2">Antirrábica</label>
+                <input type="checkbox" id="vacina3" name="vacina3" value="Javascript">
+                <label for="vacina3">Leishmaniose</label>
+                <input type="checkbox" id="vacina4" name="vacina4" value="Python">
+                <label for="vacina4">Giárdia</label>
+                <input type="checkbox" id="vacina5" name="vacina5" value="PHP">
+                <label for="vacina5">Gripe</label>
+            </div>
+        </fieldset>
+        <br>
+        <div class="campo">
+            <label><strong>Conte um pouco sobre seu pet, do que ele gosta e o quê não gosta:</strong></label>
+            <textarea row="10" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+        </div>
+
+        <button class="botao" type="submit">Enviar</button>
+        <br>
+        <p id="rodape">Proporcionando um lugar divertido e feliz para o seu melhor amigo! ❤️🐾</p>
+    </form>
+</body>
+</html>
